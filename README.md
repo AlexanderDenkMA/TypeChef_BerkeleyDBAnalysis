@@ -1,12 +1,5 @@
-## Setup for TypeChef analysis of ChibiOS
+## Setup for TypeChef analysis of MPSolve
 
-Initial setup files with extracted file list and 
-features.
+almost trivial setup since MPSolve hardly has any configuration options.
 
-Runs through most files, but some test files require stricter
-presence conditions.
-
-Requires more setup to really test HAL with multiple possible
-target directories
-
-most files contain roughly 30 features, can be analyzed in about two seconds
+runs quickly without any problems
