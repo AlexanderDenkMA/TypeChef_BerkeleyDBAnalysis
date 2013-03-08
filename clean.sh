@@ -1,1 +1,1 @@
-cat mpsolve_files | while read i; do rm MPSolve-2.2/$i.dbg; done
+cat files | while read i; do rm vim/src/$i.dbg; done

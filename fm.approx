@@ -1,11 +1,5 @@
-def(HAL_USE_SERIAL)=>def(CH_USE_EVENTS)//from type errors
-def(HAL_USE_SERIAL)=>def(CH_USE_QUEUES)//from type errors
-
-//all by #error messages:
-CH_USE_CONDVARS => CH_USE_MUTEXES // by #error message
-CH_USE_MAILBOXES => CH_USE_SEMAPHORES // by #error message
-CH_USE_HEAP => (CH_USE_MEMCORE || CH_USE_MALLOC_HEAP) // by #error message
-CH_USE_HEAP => (CH_USE_MEMCORE || CH_USE_MALLOC_HEAP) // by #error message
-CH_USE_HEAP => (CH_USE_MUTEXES || CH_USE_SEMAPHORES)
-CH_USE_DYNAMIC => CH_USE_WAITEXIT
-CH_USE_DYNAMIC => CH_USE_HEAP || CH_USE_MEMPOOLS
+//inferred from text in the source code
+FEAT_XIM mex FEAT_HANGULIN
+oneOf(FEAT_TINY,FEAT_SMALL,FEAT_NORMAL,FEAT_BIG,FEAT_HUGE)
+FEAT_XCLIPBOARD => FEAT_X11
+FEAT_CLIENTSERVER => FEAT_X11
