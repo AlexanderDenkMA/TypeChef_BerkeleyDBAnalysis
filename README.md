@@ -1,11 +1,14 @@
-## Setup for TypeChef analysis of Vim
+## Setup for TypeChef analysis of BerkeleyDB (c version)
 
-the vim setup is somewhat complicated because
-vim massively rewrites macros in header.h and
-vim.h.
+Configuration is performed through ```configure```. We have
+identified a small conservative set of configuration
+flags that a controlled by configure, all starting with ```HAVE_```. 
+Additional flags may be added later through file ```features```.
 
-Many other macros are controlled by FEAT_BIG, FEAT_NORMAL, FEAT_HUGE and so forth which makes conditions huge and parsing slow. Several macros also cannot be activated separately but are only derived from other macros (should be undefined by default).
+Otherwise the setup is quite straightforward.
 
-There seem to be no entirely clear naming convention for features. Started with FEAT_ prefix for now.
-Deactivated several GUI features because they require different header files not currently present here.
+TypeChef finds several type errors within a single feature
+when compiling files of a deactivated feature. There seem
+to be no presence conditions on files in the make scripts?
+
 

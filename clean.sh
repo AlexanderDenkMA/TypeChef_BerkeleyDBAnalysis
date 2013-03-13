@@ -1,1 +1,1 @@
-cat files | while read i; do rm vim/src/$i.dbg; done
+cat files | while read i; do rm bdb/$i.dbg; done

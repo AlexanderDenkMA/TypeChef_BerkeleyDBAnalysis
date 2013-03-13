@@ -9,14 +9,11 @@ filesToProcess() {
 
 
 flags=""
-srcPath="vim/src"
+srcPath="bdb"
 export partialPreprocFlags="--bdd \
-    -I $srcPath \
-    -I $srcPath/proto \
-    -I extraheader \
-    -I /usr/include/glib-2.0/
-    -I /usr/include/cairo
-    --prefixonly FEAT_
+    -I $srcPath/src \
+    -I $srcPath/build_unix \
+    --openFeat features \
     --debugInterface --writePI --recordTiming --parserstatistics --lexdebug \
     --include header.h \
     --featureModelFExpr fm.approx \
